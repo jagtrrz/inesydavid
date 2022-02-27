@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-serif-theme",
-  "version": "1.2.0",
-  "author": "Robert Austin <rob@zerostatic.io>",
+  "name": "ines-mesa-wedding",
+  "version": "0.0.1",
+  "author": "jagtrrz based in template of Robert Austin <rob@zerostatic.io>",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

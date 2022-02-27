@@ -1,22 +1,17 @@
 [
     {
-        "name": "Services",
-        "url": "/services/",
+        "name": "Lista de Bodas",
+        "url": "/lista-bodas/",
         "weight": 2
     },
     {
-        "name": "Team",
-        "url": "/team/",
+        "name": "Lugar de Celebración",
+        "url": "/lugar-celebración/",
         "weight": 3
     },
     {
-        "name": "About",
-        "url": "/about/",
-        "weight": 4
-    },
-    {
-        "name": "Contact",
+        "name": "Confirma Asistencia",
         "url": "/contact/",
-        "weight": 5
+        "weight": 4
     }
 ]
