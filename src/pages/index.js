@@ -1,73 +1,28 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Helmet from 'react-helmet';
-import SEO from '../components/SEO';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
-import ImageHome from "../components/ImageHome";
+import Portada from "../components/Portada";
+import ListaBoda from "../components/ListaBoda";
+import LugarCelebracion from "../components/LugarCelebracion";
+import Asistencia from "../components/Asistencia";
 
 const Home = props => {
-  const intro = props.data.intro;
-  const site = props.data.site.siteMetadata;
-  const services = props.data.services.edges;
-  const features = props.data.features.edges;
-  const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
 
   return (
     <Layout bodyClass="page-home">
-
-      <div className="divImage">
-        <ImageHome/>
+      <div className="divImage" id="portada">
+        <Portada/>
       </div>
-
-
-      {services.length > 0 && (
-        <div className="strip">
-          <div className="container pt-6 pb-6 pb-md-10">
-            <div className="row justify-content-start">
-              {services.map(({ node }) => (
-                <div key={node.id} className="col-12 col-md-4 mb-1">
-                  <div className="service service-summary">
-                    <div className="service-content">
-                      <h2 className="service-title">
-                        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-                      </h2>
-                      <p>{node.excerpt}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-auto">
-                <Link className="button button-primary" to="/services/">View All Services</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {features.length > 0 && (
-        <div className="strip strip-grey">
-          <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
-            <div className="row justify-content-center">
-              {features.map(({ node }) => (
-                <div key={node.id} className="col-12 col-md-6 col-lg-4 mb-2">
-                  <div className="feature">
-                    {node.image && (
-                      <div className="feature-image">
-                        <img src={node.image} />
-                      </div>
-                    )}
-                    <h2 className="feature-title">{node.title}</h2>
-                    <div className="feature-content">{node.description}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
+      <div  id="lista-bodas">
+        <ListaBoda />
+      </div>
+      <div  id="lugar-celebracion">
+        <LugarCelebracion />
+      </div>
+      <div  id="contact">
+        <Asistencia />
+      </div>
     </Layout>
   );
 };

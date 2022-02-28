@@ -26,9 +26,7 @@ class Header extends React.Component {
       <div className="header">
         <div className="container">
           <div className="logo">
-            <Link to="/">
               <h2>Inés & David</h2> 
-            </Link>
           </div>
           <div className="logo-mobile">
             <Link to="/">
