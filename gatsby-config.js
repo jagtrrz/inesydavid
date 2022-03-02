@@ -1,9 +1,15 @@
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
+
 const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
+
+
 
 module.exports = {
   siteMetadata: {
-    title: 'Ines & David',
-    description: 'Boda de Inés y Davi el 18 de juno de 2022'
+    title: 'Inés & David',
+    description: 'Boda de Inés y David el 18 de juno de 2022'
   },
   plugins: [
     'gatsby-plugin-sass',

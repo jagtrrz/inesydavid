@@ -67,6 +67,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-family: $font-family-base;
+  background-color: $white-offset;
   @include media-breakpoint-up(md) {
     font-size: 16px;
     line-height: 1.3;

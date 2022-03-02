@@ -1,8 +1,242 @@
 .page-home {
-    // margin-top: 20rem;
+    
+    .divImage{
+        margin-top: auto;
+        height: 100vh;
 
-    // .divImage{
-    //     margin-top: auto;
-    //     height: 150vh;
-    // }
+        .background-image{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        .content{
+            width: 100%;
+            height: inherit;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            padding-right: 2rem;
+            padding-bottom: 5.1rem;
+
+            h2{
+                font-size: 5rem;
+                font-family: $font-family-heading;
+                color: $white-offset
+            }
+            h4 {
+                font-size: 4rem;
+                font-family: $font-family-heading;
+                color: $white-offset
+            }
+        }
+
+        .min-w-max {
+            min-width: max-content;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+
+        .contentPortada{
+            padding: 2rem;
+            text-align: center;
+
+            h3, h5, p, li {
+                color: #0A0A0A;
+                font-family: 'League Spartan', sans-serif;
+            }
+        }
+
+    }
+
+    
+
+    .contentPortada, .contentListaBodas, .containerLugarCelebracion, .containerAsistencia {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+        color: grey;
+        padding: 0 2rem 0 2rem;
+
+        h2{
+            font-family: $font-family-heading;
+            font-size: 2.2rem;
+        }
+
+        p, li {
+            font-family: $font-family-text;
+            font-size: 1.2rem;
+            color: black
+        }
+
+        p:first-child {
+            margin-top: 1.5rem
+        }
+
+        li{
+            list-style: none;
+        }
+    }
+
+    .contentListaBodas{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin-top: 2rem;
+
+        .listaText{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .listaImage{
+            height: 90vh;
+
+            .background-image-lista{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .containerLugarCelebracion{
+        padding-top: 1rem;
+        h2{
+            margin-bottom: 2rem;
+        }
+        .divCelebracionImage{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            height: 40vh;
+            padding-top: 1rem;
+            .background-image-church, .background-image-castle{
+                width: 75%;
+                height: 90%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+    .containerAsistencia{
+        p{
+            padding: 0 5rem 0 5rem;
+        }
+
+        .contactForm{
+            width: 100%;
+
+            .form{
+                width: 100%;
+                // display: flex;
+                // justify-content: center;
+                // flex-direction: column;
+
+                .inputLabel{
+                    display: grid;
+                    grid-template-columns: 25% 65%;
+                    margin-top: 1rem;
+
+                    label{
+                        text-align: right;
+                        margin: 0 0.5rem 0 0;
+                    }
+
+                    .input{
+                        border-radius: 3px;
+                        border: 2px solid $link-hover-color
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: 768px){
+        .divImage{
+            .content{
+                width: 100%;
+                height: inherit;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding-right: 2rem;
+                padding-bottom: 0;
+    
+                h2{
+                    font-size: 3rem;
+                    font-family: $font-family-heading;
+                }
+                h4 {
+                    font-size: 2rem;
+                    font-family: $font-family-heading;
+                }
+            }
+        }
+        .containerLugarCelebracion{
+            .divCelebracionImage{
+                justify-content: center;
+                flex-direction: column;
+                .background-image-church, .background-image-castle{
+                    width: 100%;
+                    height: 50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            
+        }
+    }
+
+
+    @media screen and (max-width: 426px){
+        .divImage{
+            margin-top: auto;
+            height: 50vh;
+            .background-image{
+                background-size: contain;
+            }
+            .content{
+                width: 100%;
+                height: inherit;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding-right: 1rem;
+    
+                h2{
+                    font-size: 2rem;
+                    font-family: $font-family-heading;
+                }
+                h4 {
+                    font-size: 1.5rem;
+                    font-family: $font-family-heading;
+                }
+            }
+        }
+
+        .contentListaBodas{
+            display:flex;
+            flex-direction:column;
+        }
+    }
+
 }

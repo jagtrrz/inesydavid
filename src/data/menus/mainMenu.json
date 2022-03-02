@@ -6,12 +6,12 @@
     },
     {
         "name": "Lista de Bodas",
-        "url": "/#lista-bodas",
+        "url": "/#lista",
         "weight": 2
     },
     {
         "name": "Lugar de Celebración",
-        "url": "/#lugar-celebracion/",
+        "url": "/#celebracion",
         "weight": 3
     },
     {

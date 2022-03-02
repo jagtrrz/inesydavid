@@ -1,8 +1,7 @@
 import React from "react";
-import backgroundImage from "../../static/images/ines-mesa/ines-mesa.jpg";
 
 const ListaBoda = () => (
-    <div className="containerListaBoda" id="listaBoda">
+    <div className="text" id="listaBoda">
         <h2>
             Para nosotros, el mejor regalo es que nos acompañéis en un día tan especial y si, aun así, 
             queréis ayudarnos a que comencemos esta gran aventura juntos, aquí tenéis nuestro número de cuenta:
