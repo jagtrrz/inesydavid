@@ -49,5 +49,6 @@ module.exports = {
         display: 'swap'
       }
     }
-  ]
+  ],
+  pathPrefix: "/inesydavid",
 };
