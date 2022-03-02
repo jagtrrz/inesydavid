@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkines_mesa_wedding=self.webpackChunkines_mesa_wedding||[]).push([[883],{9616:function(e,n,t){t.r(n);var s=t(7294),a=t(4737);class l extends s.Component{render(){return s.createElement(a.Z,null,s.createElement("h1",null,"Not Found"),s.createElement("p",null,"You just hit a page that doesn't exist..."))}}n.default=l}}]);
+//# sourceMappingURL=component---src-pages-404-js-760b1872aa948a6a03f1.js.map
