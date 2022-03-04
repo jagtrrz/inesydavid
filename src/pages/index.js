@@ -8,6 +8,7 @@ import church from "../../static/images/ines-mesa/iglesia.jpg";
 import castle from "../../static/images/ines-mesa/castillo.jpg";
 
 import ContactForm from '../components/ContactForm';
+import Mapa from '../components/GoogleMap';
 
 const url = backgroundImage
 const listWedding = listWeddingImage
@@ -52,15 +53,29 @@ const Home = props => {
         </div>
         <div className="containerLugarCelebracion" id="celebracion">
             <h2>¿Dónde lo vamos a celebrar?</h2>
+            <div className="containerMap">
+              <div className="map">
+                <Mapa />
+              </div>
+              <div className="pAndImage">
+                
+                <div className="imageChurch">
+                  <div className="background-image-church" style={{backgroundImage: `url(${churchUrl})`}}></div>
+                </div> 
+
+                <p>
+                  La ceremonia religiosa tendrá lugar a las 18:30 en la Iglesia de Santa María de la Cuesta que se encuentra en la Plaza de la Cuesta, 6Z, 40200 Cuéllar, Segovia para continuar 
+                  con la celebración en el Castillo de Íscar situado en la carretera del castilo en Íscar, 47420, Valladolid.
+                </p>               
+              </div>
+            </div>
+            
             {/* <h2>Sábado 18 de junio de 2022</h2> */}
-            <div className="divCelebracionImage">
+            {/* <div className="divCelebracionImage">
               <div className="background-image-church" style={{backgroundImage: `url(${churchUrl})`}}></div>
               <div className="background-image-castle" style={{backgroundImage: `url(${castleUrl})`}}></div>
-            </div>
-            <p>
-                La ceremonia religiosa tendrá lugar a las 18:30 en la Iglesia de Santa María de la Cuesta que se encuentra en la Plaza de la Cuesta, 6Z, 40200 Cuéllar, Segovia para continuar 
-                con la celebración en el Castillo de Íscar situado en la carretera del castilo en Íscar, 47420, Valladolid.
-            </p>
+            </div> */}
+            
         </div>
         <div className="contentListaBodas" id="lista">
             <div className="listaText">
