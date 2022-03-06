@@ -7,11 +7,21 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 41.36688,
-  lng: -4.53735
+  lat: 41.37959,
+  lng: -4.42772
 };
 
-function Mapa() {
+const castle = {
+  lat: 41.36527,
+  lng: -4.53725
+};
+
+const church = {
+  lat: 41.39743,
+  lng: -4.31429
+};
+
+function Map() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.GOOGLE_MAP_API_KEY
@@ -29,7 +39,12 @@ function Mapa() {
   }, [])
 
   const goToIscarGoogleMap = () => {
-    const newWindow = window.open(`https://www.google.com/maps/search/?api=1&query=${center['lat']},${center['lng']}`, '_blank', 'noopener,noreferrer')
+    const newWindow = window.open(`https://www.google.com/maps/search/?api=1&query=${castle['lat']},${castle['lng']}`, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = nul
+  }
+
+  const goToChurchGoogleMap = () => {
+    const newWindow = window.open(`https://www.google.com/maps/search/?api=1&query=${church['lat']},${church['lng']}`, '_blank', 'noopener,noreferrer')
     if (newWindow) newWindow.opener = nul
   }
 
@@ -43,11 +58,17 @@ function Mapa() {
       >
         <Marker
             onLoad={onLoad}
-            position={center}
+            position={castle}
             onClick={() => {goToIscarGoogleMap()}}
+            />
+
+        <Marker
+            onLoad={onLoad}
+            position={church}
+            onClick={() => {goToChurchGoogleMap()}}
             />
       </GoogleMap>
   ) : <></>
 }
 
-export default React.memo(Mapa)
+export default React.memo(Map)

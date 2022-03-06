@@ -8,7 +8,7 @@ import church from "../../static/images/ines-mesa/iglesia.jpg";
 import castle from "../../static/images/ines-mesa/castillo.jpg";
 
 import ContactForm from '../components/ContactForm';
-import Mapa from '../components/GoogleMap';
+import Map from '../components/GoogleMap';
 
 const url = backgroundImage
 const listWedding = listWeddingImage
@@ -22,6 +22,10 @@ const final_url = production === 'true' ? `${url_production}${url}` : url
 const listWeddingUrl = production === 'true' ? `${url_production}${listWedding}` : listWedding
 const churchUrl = production === 'true' ? `${url_production}${churchPath}` : churchPath
 const castleUrl = production === 'true' ? `${url_production}${castlePath}` : castlePath
+
+const formKey = `https://www.flexyform.com/f/${process.env.FORM_KEY}`
+
+console.log(formKey);
 
 const Home = props => {
 
@@ -55,34 +59,28 @@ const Home = props => {
             <h2>¿Dónde lo vamos a celebrar?</h2>
             <div className="containerMap">
               <div className="map">
-                <Mapa />
+                <Map />
               </div>
               <div className="pAndImage">
                 
                 <div className="imageChurch">
                   <div className="background-image-church" style={{backgroundImage: `url(${churchUrl})`}}></div>
+                  <div className="background-image-castle" style={{backgroundImage: `url(${castleUrl})`}}></div>
                 </div> 
 
                 <p>
-                  La ceremonia religiosa tendrá lugar a las 18:30 en la Iglesia de Santa María de la Cuesta que se encuentra en la Plaza de la Cuesta, 6Z, 40200 Cuéllar, Segovia para continuar 
-                  con la celebración en el Castillo de Íscar situado en la carretera del castilo en Íscar, 47420, Valladolid.
+                  La ceremonia religiosa tendrá lugar a las 18:30 en la <strong>Iglesia de Santa María de la Cuesta</strong> que se encuentra en la Plaza de la Cuesta, 6Z, 40200 Cuéllar, Segovia para continuar 
+                  con la celebración en el <strong>Castillo de Íscar</strong> situado en la carretera del castilo en Íscar, 47420, Valladolid. En el mapa tenéis la dirección de ambos lugares por si necesitais usar el GPS. 
                 </p>               
               </div>
-            </div>
-            
-            {/* <h2>Sábado 18 de junio de 2022</h2> */}
-            {/* <div className="divCelebracionImage">
-              <div className="background-image-church" style={{backgroundImage: `url(${churchUrl})`}}></div>
-              <div className="background-image-castle" style={{backgroundImage: `url(${castleUrl})`}}></div>
-            </div> */}
-            
+            </div>           
         </div>
         <div className="contentListaBodas" id="lista">
             <div className="listaText">
-              <h3 className="h3Listas">
+              <p className="h3Listas">
                   Para nosotros, el mejor regalo es que nos acompañéis en un día tan especial y si, aun así, 
                   queréis ayudarnos a que comencemos esta gran aventura juntos, aquí tenéis nuestro número de cuenta:
-              </h3>
+              </p>
               <h2>
                   ES25 2100 4967 1413 0059 9758 
               </h2>
@@ -105,7 +103,7 @@ const Home = props => {
                 así como si sois vegetarianos.
             </p>
             <div className="contactForm">
-                <ContactForm action="https://www.flexyform.com/f/be220b10a06cd2cca274f599856b96b8e3a6cf04"/>
+                <ContactForm action={formKey} />
             </div>
         </div>
     </Layout>
