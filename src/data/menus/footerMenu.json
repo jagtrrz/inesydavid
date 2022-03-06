@@ -3,5 +3,20 @@
         "name": "Portada",
         "url": "/",
         "weight": 1
+    },
+    {
+        "name": "Lugar de Celebración",
+        "url": "/lugar-celebracion",
+        "weight": 2
+    },
+    {
+        "name": "Lista de Bodas",
+        "url": "/lista-bodas",
+        "weight": 3
+    },
+    {
+        "name": "Confirma Asistencia",
+        "url": "/asistencia",
+        "weight": 4
     }
 ]

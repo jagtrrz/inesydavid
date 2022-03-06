@@ -1,22 +1,22 @@
 [
     {
         "name": "Portada",
-        "url": "/#portada",
+        "url": "/",
+        "weight": 1
+    },
+    {
+        "name": "Lugar de Celebración",
+        "url": "/lugar-celebracion",
         "weight": 2
     },
     {
         "name": "Lista de Bodas",
-        "url": "/#lista",
-        "weight": 2
-    },
-    {
-        "name": "Lugar de Celebración",
-        "url": "/#celebracion",
+        "url": "/lista-bodas",
         "weight": 3
     },
     {
         "name": "Confirma Asistencia",
-        "url": "/#contact",
+        "url": "/asistencia",
         "weight": 4
     }
 ]

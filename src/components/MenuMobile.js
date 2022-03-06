@@ -18,10 +18,10 @@ const MobileMenu = props => {
 
   const [hamburgerActive, setHamburgerActive] = useState({hamburgerActive: false})
 
-  const closeTest = (prevState) => {
-    setHamburgerActive(!prevState.hamburgerActive)
-    props.close(hamburgerActive)
-  }
+  // const closeTest = (prevState) => {
+  //   setHamburgerActive(!prevState.hamburgerActive)
+  //   props.close(hamburgerActive)
+  // }
 
   
   return (
@@ -29,7 +29,7 @@ const MobileMenu = props => {
       <ul>
         {data.allMainMenuJson.edges.map(({ node }) => (
           <li key={node.name}>
-            <Link to={node.url} activeClassName="active" onClick={(props) => closeTest(props)}>{node.name}</Link>
+            <Link to={node.url} activeClassName="active">{node.name}</Link>
           </li>
         ))}
       </ul>
