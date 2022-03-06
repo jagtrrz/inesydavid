@@ -25,8 +25,6 @@ const castleUrl = production === 'true' ? `${url_production}${castlePath}` : cas
 
 const formKey = `https://www.flexyform.com/f/${process.env.FORM_KEY}`
 
-console.log(formKey);
-
 const Home = props => {
 
   return (
