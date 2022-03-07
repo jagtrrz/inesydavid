@@ -57,6 +57,7 @@ const Home = props => {
             <h2>¿Dónde lo vamos a celebrar?</h2>
             <div className="containerMap">
               <div className="map">
+                <p>Mapa</p>
                 <Map />
               </div>
               <div className="pAndImage">
