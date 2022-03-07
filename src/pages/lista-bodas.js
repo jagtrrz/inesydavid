@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
 // import backgroundImage from "../../static/images/ines-mesa/ines-mesa.jpg";
-import listWeddingImage from "../../static/images/ines-mesa/ines-mesa-2.jpg";
+// import listWeddingImage from "../../static/images/ines-mesa/ines-mesa-2.jpg";
 // import church from "../../static/images/ines-mesa/iglesia.jpg";
 // import castle from "../../static/images/ines-mesa/castillo.jpg";
 
@@ -11,15 +11,15 @@ import listWeddingImage from "../../static/images/ines-mesa/ines-mesa-2.jpg";
 // import Map from '../components/GoogleMap';
 
 // const url = backgroundImage
-const listWedding = listWeddingImage
+// const listWedding = listWeddingImage
 // const churchPath = church
 // const castlePath = castle
 
-const url_production = process.env.URL_MEDIA
-const production = process.env.PRODUCTION
+// const url_production = process.env.URL_MEDIA
+// const production = process.env.PRODUCTION
 
 // const final_url = production === 'true' ? `${url_production}${url}` : url
-const listWeddingUrl = production === 'true' ? `${url_production}${listWedding}` : listWedding
+// const listWeddingUrl = production === 'true' ? `${url_production}${listWedding}` : listWedding
 // const churchUrl = production === 'true' ? `${url_production}${churchPath}` : churchPath
 // const castleUrl = production === 'true' ? `${url_production}${castlePath}` : castlePath
 
@@ -87,7 +87,7 @@ const Home = props => {
               </h2>
             </div>
             <div className="listaImage">
-              <div className="background-image-lista" style={{backgroundImage: `url(${listWeddingUrl})`}}></div>
+              <div className="background-image-lista"></div>
             </div>
         </div>
         

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
-import backgroundImage from "../../static/images/ines-mesa/ines-mesa.jpg";
+// import backgroundImage from "../../static/images/ines-mesa/ines-mesa.jpg";
 // import listWeddingImage from "../../static/images/ines-mesa/ines-mesa-2.jpg";
 // import church from "../../static/images/ines-mesa/iglesia.jpg";
 // import castle from "../../static/images/ines-mesa/castillo.jpg";
@@ -10,15 +10,15 @@ import backgroundImage from "../../static/images/ines-mesa/ines-mesa.jpg";
 // import ContactForm from '../components/ContactForm';
 // import Map from '../components/GoogleMap';
 
-const url = backgroundImage
+// const url = backgroundImage
 // const listWedding = listWeddingImage
 // const churchPath = church
 // const castlePath = castle
 
-const url_production = process.env.URL_MEDIA
-const production = process.env.PRODUCTION
+// const url_production = process.env.URL_MEDIA
+// const production = process.env.PRODUCTION
 
-const final_url = production === 'true' ? `${url_production}${url}` : url
+// const final_url = production === 'true' ? `${url_production}${url}` : url
 // const listWeddingUrl = production === 'true' ? `${url_production}${listWedding}` : listWedding
 // const churchUrl = production === 'true' ? `${url_production}${churchPath}` : churchPath
 // const castleUrl = production === 'true' ? `${url_production}${castlePath}` : castlePath
@@ -30,7 +30,7 @@ const Home = props => {
   return (
     <Layout bodyClass="page-home">
         <div  className="divImage">
-          <div className="background-image" style={{backgroundImage: `url(${final_url})`}}>
+          <div className="background-image">
               <div className="content">
                   <h2>¡NOS CASAMOS!</h2> 
                   <h4>SAVE THE DATE 18/06/2022</h4>

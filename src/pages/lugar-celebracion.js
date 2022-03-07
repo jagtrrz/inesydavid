@@ -4,24 +4,24 @@ import Layout from '../components/Layout';
 
 // import backgroundImage from "../../static/images/ines-mesa/ines-mesa.jpg";
 // import listWeddingImage from "../../static/images/ines-mesa/ines-mesa-2.jpg";
-import church from "../../static/images/ines-mesa/iglesia.jpg";
-import castle from "../../static/images/ines-mesa/castillo.jpg";
+// import church from "../../static/images/ines-mesa/iglesia.jpg";
+// import castle from "../../static/images/ines-mesa/castillo.jpg";
 
 // import ContactForm from '../components/ContactForm';
 import Map from '../components/GoogleMap';
 
 // const url = backgroundImage
 // const listWedding = listWeddingImage
-const churchPath = church
-const castlePath = castle
+// const churchPath = church
+// const castlePath = castle
 
-const url_production = process.env.URL_MEDIA
-const production = process.env.PRODUCTION
+// const url_production = process.env.URL_MEDIA
+// const production = process.env.PRODUCTION
 
 // const final_url = production === 'true' ? `${url_production}${url}` : url
 // const listWeddingUrl = production === 'true' ? `${url_production}${listWedding}` : listWedding
-const churchUrl = production === 'true' ? `${url_production}${churchPath}` : churchPath
-const castleUrl = production === 'true' ? `${url_production}${castlePath}` : castlePath
+// const churchUrl = production === 'true' ? `${url_production}${churchPath}` : churchPath
+// const castleUrl = production === 'true' ? `${url_production}${castlePath}` : castlePath
 
 // const formKey = `https://www.flexyform.com/f/${process.env.FORM_KEY}`
 
@@ -62,8 +62,8 @@ const Home = props => {
               <div className="pAndImage">
                 
                 <div className="imageChurch">
-                  <div className="background-image-church" style={{backgroundImage: `url(${churchUrl})`}}></div>
-                  <div className="background-image-castle" style={{backgroundImage: `url(${castleUrl})`}}></div>
+                  <div className="background-image-church"></div>
+                  <div className="background-image-castle"></div>
                 </div> 
 
                 <p>

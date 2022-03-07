@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 
 const MobileMenu = props => {
@@ -15,14 +15,6 @@ const MobileMenu = props => {
       }
     }
   `);
-
-  const [hamburgerActive, setHamburgerActive] = useState({hamburgerActive: false})
-
-  // const closeTest = (prevState) => {
-  //   setHamburgerActive(!prevState.hamburgerActive)
-  //   props.close(hamburgerActive)
-  // }
-
   
   return (
     <div id="main-menu-mobile" className={`main-menu-mobile ${props.active ? 'open' : ''}`}>
