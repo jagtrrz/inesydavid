@@ -7,7 +7,7 @@ const url = backgroundImage
 const url_production = process.env.URL_MEDIA
 const production = process.env.PRODUCTION
 
-const final_url = production === 'true' ? `${url_production}${url}` : url
+const final_url = production === 'true' ? url : url
 
 const Portada = () => (
     <>
