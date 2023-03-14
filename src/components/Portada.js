@@ -9,6 +9,8 @@ const production = process.env.PRODUCTION
 
 const final_url = production === 'true' ? url : url
 
+console.log("finalURl", final_url)
+
 const Portada = () => (
     <>
         <div className="background-image" style={{backgroundImage: `url(${final_url})`}}>
