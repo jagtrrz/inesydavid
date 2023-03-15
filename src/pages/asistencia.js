@@ -1,39 +1,25 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
+import ContactForm from "../components/ContactForm";
 
-console.log("home")
+const formKey = `https://www.flexyform.com/f/${process.env.FORM_KEY}`;
 
 const Home = (props) => {
   return (
     <Layout bodyClass="page-home">
-      <div className="divImage">
-        <div className="background-image">
-          <div className="content">
-            <h2>¡NOS CASAMOS!</h2>
-            <h4>SAVE THE DATE 18/06/2022</h4>
-          </div>
-        </div>
-      </div>
-      <div className="contentPortada" id="portada">
-        <h2>¡Bienvenidos a la web de nuestra boda!</h2>
+      <div className="containerAsistencia" id="contact">
+        <h2>¿Nos confirmas tú asistencia?</h2>
         <p>
-          Estamos ilusionados de poder compartir un día tan especial con
-          vosotros. <br></br>
-          En esta página iremos incorporando información útil sobre la boda como
-          el lugar de celebración, horarios y recomendaciones para ayudaros a
-          disfrutar al máximo del gran evento.<br></br>
-          Para cualquier duda que os surja, estaremos encantados de que os
-          pongáis en contacto con nosotros:
+          Nos encantará veros en nuestra boda. ¡Estamos deseando que llegue ya
+          el día! <br></br>
+          En esta sección os pedimos que confirméis vuestra asistencia a la
+          boda, con quien venís y si tenéis alguna alergia o intolerancia, así
+          como si sois vegetarianos.
         </p>
-        <ul>
-          <li>
-            <strong>David Mesa - davidmesa@icam.es - 696 472 540</strong>
-          </li>
-          <li>
-            <strong>Inés Muñoz - inesammartin@gmail.com - 686 281 697</strong>
-          </li>
-        </ul>
+        <div className="contactForm">
+          <ContactForm action={formKey} />
+        </div>
       </div>
     </Layout>
   );

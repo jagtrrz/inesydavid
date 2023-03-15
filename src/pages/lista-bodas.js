@@ -2,38 +2,22 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
-console.log("home")
-
 const Home = (props) => {
   return (
     <Layout bodyClass="page-home">
-      <div className="divImage">
-        <div className="background-image">
-          <div className="content">
-            <h2>¡NOS CASAMOS!</h2>
-            <h4>SAVE THE DATE 18/06/2022</h4>
-          </div>
+      <div className="contentListaBodas" id="lista">
+        <div className="listaText">
+          <p className="h3Listas">
+            Para nosotros, el mejor regalo es que nos acompañéis en un día tan
+            especial y si, aun así, queréis ayudarnos a que comencemos esta gran
+            aventura juntos, aquí tenéis nuestro número de cuenta:
+          </p>
+          <h2>ES25 2100 4967 1413 0059 9758</h2>
+          <h2>¡Muchísimas gracias!</h2>
         </div>
-      </div>
-      <div className="contentPortada" id="portada">
-        <h2>¡Bienvenidos a la web de nuestra boda!</h2>
-        <p>
-          Estamos ilusionados de poder compartir un día tan especial con
-          vosotros. <br></br>
-          En esta página iremos incorporando información útil sobre la boda como
-          el lugar de celebración, horarios y recomendaciones para ayudaros a
-          disfrutar al máximo del gran evento.<br></br>
-          Para cualquier duda que os surja, estaremos encantados de que os
-          pongáis en contacto con nosotros:
-        </p>
-        <ul>
-          <li>
-            <strong>David Mesa - davidmesa@icam.es - 696 472 540</strong>
-          </li>
-          <li>
-            <strong>Inés Muñoz - inesammartin@gmail.com - 686 281 697</strong>
-          </li>
-        </ul>
+        <div className="listaImage">
+          <div className="background-image-lista"></div>
+        </div>
       </div>
     </Layout>
   );

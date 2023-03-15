@@ -10,21 +10,21 @@ class ContactForm extends React.Component {
     }
     return (
       <form style={formStyle} className="form" action={this.props.action} method="post">
-        <div>
-          <label>Full name</label>
-          <input type="text" name="fullname"/>
+        <div className="inputLabel">
+          <label>Nombre y apellidos</label>
+          <input type="text" name="fullname" className="input"/>
         </div>
-        <div>
+        <div className="inputLabel">
           <label>Email</label>
-          <input type="email" name="email"/>
+          <input type="email" name="email" className="input"/>
         </div>
-        <div>
-          <label>Message</label>
-          <textarea name="message" rows="5"></textarea>
+        <div className="inputLabel">
+          <label>Comentarios:</label>
+          <textarea name="message" rows="5" className="input"></textarea>
         </div>
         <ul className="actions" style={buttonsStyle}>
             <li>
-              <button type="submit"  className="button special">Send</button>
+              <button type="submit"  className="button special">Enviar</button>
             </li>
         </ul>
       </form>

@@ -5,6 +5,7 @@ $black: #0A0A0A;
 $white: #ffffff;
 $white-offset: #f6f7ff;
 $steel: #0B93C1;
+$grey-text: #57605D;
 
 // Links
 $link-color: $primary;
@@ -15,7 +16,7 @@ $link-hover-decoration: underline;
 // Fonts
 $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: 'Playfair Display', serif, -apple-system;
-$font-family-text: 'League Spartan', sans-serif, -apple-system;
+$font-family-text: 'Montserrat', sans-serif;
 
 // Footer
 $footer-background-color: $primary;
@@ -53,11 +54,6 @@ $sub-footer-text-color: $white;
 @import 'components/feature';
 @import 'components/social';
 
-@import 'components/_portada';
-@import 'components/_lista-boda';
-@import 'components/_lugar-celebracion';
-@import 'components/_asistencia';
-
 // Pages
 @import 'pages/home';
 @import 'pages/team/team-summary';
@@ -67,6 +63,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-family: $font-family-base;
+  background-color: $white-offset;
   @include media-breakpoint-up(md) {
     font-size: 16px;
     line-height: 1.3;
