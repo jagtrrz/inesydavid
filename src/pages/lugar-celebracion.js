@@ -38,7 +38,6 @@ const Home = (props) => {
 export const query = graphql`
   query {
     services: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services/.*/" } }
       sort: { fields: [frontmatter___weight], order: ASC }
       limit: 6
     ) {
@@ -54,16 +53,6 @@ export const query = graphql`
           }
           excerpt
         }
-      }
-    }
-    intro: markdownRemark(fileAbsolutePath: { regex: "/content/index.md/" }) {
-      html
-      frontmatter {
-        image
-        intro_image
-        intro_image_absolute
-        intro_image_hide_on_mobile
-        title
       }
     }
     features: allFeaturesJson {
