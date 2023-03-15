@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 
+
 const Home = (props) => {
   return (
     <Layout bodyClass="page-home">
