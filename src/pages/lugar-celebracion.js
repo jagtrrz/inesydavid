@@ -4,6 +4,9 @@ import Layout from "../components/Layout";
 
 import Map from "../components/GoogleMap";
 
+
+console.log("celebracion")
+
 const Home = (props) => {
   return (
     <Layout bodyClass="page-home">
